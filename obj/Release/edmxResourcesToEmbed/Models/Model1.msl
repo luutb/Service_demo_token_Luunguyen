@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Vn_postModelStoreContainer" CdmEntityContainer="Vn_postEntities">
+    <EntitySetMapping Name="categories">
+      <EntityTypeMapping TypeName="Vn_postModel.category">
+        <MappingFragment StoreEntitySet="category">
+          <ScalarProperty Name="id_category" ColumnName="id_category" />
+          <ScalarProperty Name="id_sort" ColumnName="id_sort" />
+          <ScalarProperty Name="category1" ColumnName="category" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sorts">
+      <EntityTypeMapping TypeName="Vn_postModel.sort">
+        <MappingFragment StoreEntitySet="sort">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="sort1" ColumnName="sort" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="post1">
+      <EntityTypeMapping TypeName="Vn_postModel.post1">
+        <MappingFragment StoreEntitySet="post1">
+          <ScalarProperty Name="post" ColumnName="post" />
+          <ScalarProperty Name="id_category" ColumnName="id_category" />
+          <ScalarProperty Name="id_post" ColumnName="id_post" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="users">
+      <EntityTypeMapping TypeName="Vn_postModel.user">
+        <MappingFragment StoreEntitySet="user">
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="id_user" ColumnName="id_user" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
